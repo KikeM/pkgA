@@ -8,6 +8,6 @@ setup(
         'pkgB'
     ],
     dependency_links = [
-        'git+https://github.com/mmngreco/pkgB.git@crash#egg=pkgB-0']
+        'git+https://github.com/mmngreco/pkgB.git#egg=pkgB-0']
 )
 
