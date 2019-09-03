@@ -3,6 +3,8 @@
 This package is used to debug an issue found with `pip-18` and the command
 `--process-dependency-links`. 
 
+In collaboration with @mmngreco
+
 # Problem description
 A non-PyPi package has the following dependencies:
     - PyPi package (here `numpy` is a proxy).
