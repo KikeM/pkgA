@@ -31,6 +31,7 @@ A couple of useful copy-paste lines to reproduce the mistakes
 ```bash
 git checkout standard
 pip install --process-dependency-links -I -U --no-cache-dir .
+pip list | grep numpy
 ```
 
 ## Totally incompatible versions
@@ -40,4 +41,5 @@ pip install --process-dependency-links -I -U --no-cache-dir .
 ```bash
 git checkout crash
 pip install --process-dependency-links -I -U --no-cache-dir .
+pip list | grep numpy
 ```
