@@ -5,9 +5,7 @@ setup(
     packages         = find_packages(),
     install_requires = [
         'numpy>=1.14',
-        'pkgB'
+        'pkgB@git+https://github.com/mmngreco/pkgB.git'
     ],
-    dependency_links = [
-        'git+https://github.com/mmngreco/pkgB.git#egg=pkgB-0']
-)
+    )
 
