@@ -18,4 +18,26 @@ Our package (`pkgA`) requires a greater or equal version of the PyPi package, wh
 Despite the fact that `pkgB` fixes a specific version of our PyPi library, 
 `pip` ignores this fact and goes ahead installing the highest available version
 of the PyPi package. This creates an unfeasible situation, where `pkgB` and the
-PyPi library with an incompatible version coexist in the same environment.    
+PyPi library with an incompatible version coexist in the same environment.
+
+# Code snippets
+
+A couple of useful copy-paste lines to reproduce the mistakes
+
+## No respect for the fixed version
+
+`pkgB` has `numpy==1.14`.
+
+```bash
+git checkout standard
+pip install --process-dependency-links -I -U --no-cache-dir .
+```
+
+## Totally incompatible versions
+
+`pkgB` has `numpy==1.13`.
+
+```bash
+git checkout crash
+pip install --process-dependency-links -I -U --no-cache-dir .
+```
