@@ -4,7 +4,7 @@ setup(
     name             = 'pkgA',
     packages         = find_packages(),
     install_requires = [
-        'numpy>=1.14',
+        'pip-install-test>=0.4',
         'pkgB'
     ],
     dependency_links = [
